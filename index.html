@@ -1,90 +1,347 @@
-
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html lang="en">
 <head>
-    <title>Neil Gannon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, , shrink-to-fit=no"/>
-    <script src="js/bootstrap.bundle.js"> </script>
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link type="text/css" rel="stylesheet" href="css/custom.css"/>
-	<meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- EDIT: your name + role. This is what shows in the browser tab and in Google results. -->
+    <title>Neil Gannon — Gameplay Programmer</title>
+    <meta name="description" content="Gameplay programmer working in C++ and Unreal Engine 5. Portfolio of playable projects, source code and technical write-ups.">
+
+    <!-- Link previews (Discord, LinkedIn, Slack, Teams). Use an absolute URL for og:image. -->
+    <meta property="og:title" content="Neil Gannon — Gameplay Programmer">
+    <meta property="og:description" content="Playable projects, source code and technical write-ups.">
+    <meta property="og:image" content="https://neilgannon.github.io/Content/Posters/fair_sample.jpg">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0b0d10">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c6f24e'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' text-anchor='middle' fill='%230b0d10'%3ENG%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="js/portfolio.js" defer></script>
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="row top-buffer">
-        <div class="col-sm-6">
-            <div class="card text-white bg-dark mb-3">
-                <img src="Content/Images/SampleProject1Thumnail.png" class="card-img-top"/>
-                <div class="card-body">
-                    <h3 class="card-title">First Person Shooter</h3>
-                    <h4 class="card-title">Unreal Engine 5</h4>
-                    <span class="badge bg-info text-dark">C++</span>
-                    <span class="badge bg-info text-dark">Blueprints</span>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non justo sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat orci felis, ullamcorper mollis enim rutrum non. Vivamus euismod, diam id rutrum mollis, leo nibh pretium ipsum, eget pellentesque nisi augue id massa. Suspendisse potenti. Aenean pellentesque nulla blandit iaculis lacinia. Phasellus bibendum nec nunc vel sollicitudin. Phasellus fermentum dictum nisi faucibus luctus. Nulla accumsan mollis sagittis.
-                    </p>
-                        <a class="btn btn-primary" href="https://github.com/neilgannon/GitHubSampleFPS">Go to repository &raquo;</a>
+<header class="site-header">
+    <nav class="nav wrap" aria-label="Main">
+        <a class="nav__brand" href="#top" aria-label="Neil Gannon, back to top">NG<span>_</span></a>
+        <ul class="nav__links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <a class="btn btn--small" href="Content/CV.pdf" download>CV <span aria-hidden="true">↓</span></a>
+    </nav>
+</header>
+
+<main id="main">
+
+    <!-- ============================================================
+         HERO — who you are, what you do, how to contact you.
+         A recruiter should get all three in five seconds.
+         ============================================================ -->
+    <section class="hero" id="top">
+        <div class="wrap hero__inner">
+            <div class="hero__text">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open to graduate roles · June 2027</p>
+                <h1 class="hero__title">Neil Gannon</h1>
+                <p class="hero__role">Gameplay Programmer</p>
+                <p class="hero__pitch">
+                    I build gameplay systems in <strong>C++</strong> and <strong>Unreal Engine 5</strong>:
+                    weapons, character movement, and the tools designers use to tune them.
+                    Final-year BSc Games Programming student.
+                </p>
+                <div class="hero__actions">
+                    <a class="btn" href="#work">See my work</a>
+                    <a class="btn btn--ghost" href="Content/CV.pdf" download>Download CV</a>
                 </div>
+                <ul class="socials" aria-label="Contact links">
+                    <!-- EDIT: your own links. Remove any you don't use. -->
+                    <li><a href="https://github.com/neilgannon" rel="me">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/your-profile/" rel="me">LinkedIn</a></li>
+                    <li><a href="mailto:you@example.com">you@example.com</a></li>
+                </ul>
             </div>
-        </div>
 
-        <div class="col-sm-6">
-            <div class="card text-white bg-dark mb-3">
-                <video class="card-img-top"src="Content/Video/tps_sample.mp4" autoplay="" muted="" loop="" type="video/mp4"></video>
-                <div class="card-body">
-                    <h3 class="card-title">Third Person Shooter</h3>
-                    <h4 class="card-title">Unreal Engine 5</h4>
-                    <span class="badge bg-info text-dark">C++</span>
-                    <span class="badge bg-info text-dark">Blueprints</span>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non justo sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat orci felis, ullamcorper mollis enim rutrum non. Vivamus euismod, diam id rutrum mollis, leo nibh pretium ipsum, eget pellentesque nisi augue id massa. Suspendisse potenti. Aenean pellentesque nulla blandit iaculis lacinia. Phasellus bibendum nec nunc vel sollicitudin. Phasellus fermentum dictum nisi faucibus luctus. Nulla accumsan mollis sagittis.
-                    </p>
-                        <a class="btn btn-primary" href="https://github.com/neilgannon/GitHubSampleTPS">Go to repository &raquo;</a>
+            <figure class="hero__portrait">
+                <img src="Content/Images/profile.webp" width="256" height="256" alt="Portrait of Neil Gannon">
+                <figcaption>
+                    <dl class="stat-list">
+                        <div><dt>Projects</dt><dd>4</dd></div>
+                        <div><dt>Engines</dt><dd>UE5 · Unity</dd></div>
+                        <div><dt>Language</dt><dd>C++</dd></div>
+                    </dl>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURED PROJECT — your single strongest piece of work.
+         If it can be played in a browser, put it here.
+         ============================================================ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+        <div class="wrap">
+            <header class="section__head">
+                <p class="section__index">01</p>
+                <h2 id="work-title">Selected work</h2>
+            </header>
+
+            <article class="featured">
+                <div class="media media--featured">
+                    <video src="Content/Video/fair_sample.mp4" poster="Content/Posters/fair_sample.jpg"
+                           muted loop playsinline preload="none" aria-label="Gameplay footage of Engineering Fair 2023"></video>
+                    <a class="media__play" href="Content/Games/EngineeringFair/index.html">
+                        <span aria-hidden="true">▶</span> Play in browser
+                    </a>
                 </div>
-            </div>
-        </div>
 
-        <div class="col-sm-6">
-            <div class="card text-white bg-dark mb-3">
-                <video class="card-img-top"src="Content/Video/fair_sample.mp4" autoplay="" muted="" loop="" type="video/mp4"></video>
-                <div class="card-body">
-                    <h3 class="card-title">Engineering Fair 2023</h3>
-                    <h4 class="card-title">Unity</h4>
-                    <span class="badge bg-info text-dark">C#</span>
-                    <span class="badge bg-info text-dark">WebGL</span>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non justo sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat orci felis, ullamcorper mollis enim rutrum non. Vivamus euismod, diam id rutrum mollis, leo nibh pretium ipsum, eget pellentesque nisi augue id massa. Suspendisse potenti. Aenean pellentesque nulla blandit iaculis lacinia. Phasellus bibendum nec nunc vel sollicitudin. Phasellus fermentum dictum nisi faucibus luctus. Nulla accumsan mollis sagittis.
+                <div class="featured__body">
+                    <p class="kicker">Featured · Unity · 2023</p>
+                    <h3 class="featured__title">Engineering Fair 2023</h3>
+                    <p class="lede">
+                        A top-down arcade space shooter built for a public engineering fair, where
+                        visitors played it on a touchscreen kiosk. Built solo in two weeks and
+                        deployed to WebGL.
                     </p>
-                        <a class="btn btn-primary" href="https://github.com/neilgannon/EngineeringFair2023">Go to repository &raquo;</a>
-                        <a type="button" class="btn btn-success" href="https://neilgannon.github.io/Content/Games/EngineeringFair/index.html">Play in browser</a>
-                </div>
-            </div>
-        </div>
 
-            <div class="col-sm-6">
-                <div class="card text-white bg-dark mb-3">
-                    <div class="card-img-top carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="Content/Images/cpp_sample.png" class="d-block w-100">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="Content/Images/cpp_sample_2.png" class="d-block w-100">
-                          </div>
-                        </div>
-                      </div>
-                    <div class="card-body">
-                        <h3 class="card-title">C++ Open World</h3>
-                        <h4 class="card-title">Unreal Engine 5</h4>
-                        <span class="badge bg-info text-dark">C++</span>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non justo sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec volutpat orci felis, ullamcorper mollis enim rutrum non. Vivamus euismod, diam id rutrum mollis, leo nibh pretium ipsum, eget pellentesque nisi augue id massa. Suspendisse potenti. Aenean pellentesque nulla blandit iaculis lacinia. Phasellus bibendum nec nunc vel sollicitudin. Phasellus fermentum dictum nisi faucibus luctus. Nulla accumsan mollis sagittis.
-                        </p>
-                            <a class="btn btn-primary" href="https://github.com/neilgannon/GitHubSampleCPP">Go to repository &raquo;</a>
+                    <dl class="facts">
+                        <div><dt>Role</dt><dd>Solo developer</dd></div>
+                        <div><dt>Duration</dt><dd>2 weeks</dd></div>
+                        <div><dt>Platform</dt><dd>WebGL</dd></div>
+                        <div><dt>Language</dt><dd>C#</dd></div>
+                    </dl>
+
+                    <h4 class="list-title">What I built</h4>
+                    <ul class="ticks">
+                        <li>Wave spawner driven by <code>ScriptableObject</code> data, so difficulty could be tuned between sessions without a rebuild</li>
+                        <li>Object pooling for projectiles and debris, keeping the WebGL build at a steady 60 fps</li>
+                        <li>Twin-stick controls that also work with a mouse and a touchscreen</li>
+                    </ul>
+
+                    <ul class="tags" aria-label="Technologies">
+                        <li>C#</li><li>Unity</li><li>WebGL</li><li>Object pooling</li>
+                    </ul>
+
+                    <div class="links">
+                        <a class="btn" href="Content/Games/EngineeringFair/index.html">Play in browser</a>
+                        <a class="btn btn--ghost" href="https://github.com/neilgannon/EngineeringFair2023">View source</a>
                     </div>
                 </div>
+            </article>
+
+            <!-- ========================================================
+                 PROJECT GRID — copy one <article class="card"> block per project.
+                 Aim for 3–6 projects; quality beats quantity.
+                 ======================================================== -->
+            <div class="grid">
+
+                <article class="card">
+                    <div class="media">
+                        <video src="Content/Video/tps_sample.mp4" poster="Content/Posters/tps_sample.jpg"
+                               muted loop playsinline preload="none" aria-label="Third-person character movement demo"></video>
+                    </div>
+                    <div class="card__body">
+                        <p class="kicker">Unreal Engine 5 · 2024</p>
+                        <h3 class="card__title">Third Person Shooter</h3>
+                        <p>Character controller and cover system with animation-driven movement.</p>
+                        <ul class="ticks ticks--compact">
+                            <li>Custom <code>UCharacterMovementComponent</code> for crouch-to-cover</li>
+                            <li>Aim offsets and blend spaces wired from C++ state</li>
+                        </ul>
+                        <ul class="tags" aria-label="Technologies"><li>C++</li><li>Blueprints</li><li>Animation</li></ul>
+                        <div class="links">
+                            <a class="link" href="https://github.com/neilgannon/GitHubSampleTPS">Source <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="media">
+                        <img src="Content/Images/fps_sample.jpg" loading="lazy" width="1280" height="720"
+                             alt="First-person view holding a rifle in a grey-box arena with blue target cubes">
+                    </div>
+                    <div class="card__body">
+                        <p class="kicker">Unreal Engine 5 · 2024</p>
+                        <h3 class="card__title">First Person Shooter</h3>
+                        <p>Modular weapon system where new guns are data assets, not new code.</p>
+                        <ul class="ticks ticks--compact">
+                            <li>Hitscan and projectile firing behind one interface</li>
+                            <li>Recoil and spread curves editable by designers</li>
+                        </ul>
+                        <ul class="tags" aria-label="Technologies"><li>C++</li><li>Blueprints</li><li>Data assets</li></ul>
+                        <div class="links">
+                            <a class="link" href="https://github.com/neilgannon/GitHubSampleFPS">Source <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="media">
+                        <img src="Content/Images/openworld_sample.jpg" loading="lazy" width="1280" height="686"
+                             alt="Procedurally generated desert of rolling sand dunes under a cloudy sky">
+                    </div>
+                    <div class="card__body">
+                        <p class="kicker">Unreal Engine 5 · 2025</p>
+                        <h3 class="card__title">C++ Open World</h3>
+                        <p>Streaming procedural terrain generated at runtime from layered noise.</p>
+                        <ul class="ticks ticks--compact">
+                            <li>Chunked world that streams around the player</li>
+                            <li>Multithreaded heightfield generation, see the <a href="#code">code sample</a></li>
+                        </ul>
+                        <ul class="tags" aria-label="Technologies"><li>C++</li><li>Procedural</li><li>Multithreading</li></ul>
+                        <div class="links">
+                            <a class="link" href="https://github.com/neilgannon/GitHubSampleCPP">Source <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         CODE SAMPLE — show 15–30 lines you're proud of, and say WHY.
+         Paste plain code inside <code>; highlighting is automatic.
+         Remember to escape < as &lt; and > as &gt;.
+         ============================================================ -->
+    <section class="section section--alt" id="code" aria-labelledby="code-title">
+        <div class="wrap code-layout">
+            <div>
+                <header class="section__head">
+                    <p class="section__index">02</p>
+                    <h2 id="code-title">Code I'm proud of</h2>
+                </header>
+                <p class="lede">
+                    Terrain chunks in the open-world project used to hitch the game thread while
+                    they generated. I moved the noise sampling onto worker threads with
+                    <code>ParallelFor</code>, which cut chunk generation from
+                    <strong>38&nbsp;ms to 6&nbsp;ms</strong>.
+                </p>
+                <ul class="ticks">
+                    <li>Rows are independent, so they split across cores without locks</li>
+                    <li>Ridged fractal noise gives the sharp crests of wind-blown dunes</li>
+                    <li>Every tuning value is exposed to designers through a settings struct</li>
+                </ul>
+                <a class="link" href="https://github.com/neilgannon/GitHubSampleCPP">Full file on GitHub <span aria-hidden="true">→</span></a>
+            </div>
+
+            <figure class="code-window">
+                <figcaption class="code-window__bar">
+                    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    DuneTerrainComponent.cpp
+                </figcaption>
+<pre><code data-lang="cpp">// Build the heightfield for one terrain chunk using ridged fractal noise.
+void UDuneTerrainComponent::GenerateChunk(const FIntPoint ChunkCoord)
+{
+    const int32 N = Settings.VerticesPerSide;
+    TArray&lt;float&gt; Heights;
+    Heights.SetNumUninitialized(N * N);
+
+    // Each row is independent, so split rows across worker threads.
+    ParallelFor(N, [&amp;](int32 Y)
+    {
+        for (int32 X = 0; X &lt; N; ++X)
+        {
+            const FVector2D World = ChunkToWorld(ChunkCoord, X, Y);
+            float Amplitude = 1.0f;
+            float Frequency = Settings.BaseFrequency;
+            float Height = 0.0f;
+
+            for (int32 Octave = 0; Octave &lt; Settings.Octaves; ++Octave)
+            {
+                Height += FMath::PerlinNoise2D(World * Frequency) * Amplitude;
+                Amplitude *= Settings.Persistence;
+                Frequency *= Settings.Lacunarity;
+            }
+
+            // Fold the noise so crests read as sharp, wind-blown dunes.
+            Heights[Y * N + X] = (1.0f - FMath::Abs(Height)) * Settings.MaxHeight;
+        }
+    });
+
+    BuildMeshSection(ChunkCoord, Heights);
+}</code></pre>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS — plain grouped lists. Avoid progress bars and
+         percentages: "C++ 80%" tells an employer nothing.
+         ============================================================ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="wrap">
+            <header class="section__head">
+                <p class="section__index">03</p>
+                <h2 id="skills-title">Skills</h2>
+            </header>
+            <div class="skills">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul><li>C++ (17/20)</li><li>C#</li><li>HLSL</li><li>Python</li></ul>
                 </div>
+                <div class="skill-group">
+                    <h3>Engines</h3>
+                    <ul><li>Unreal Engine 5</li><li>Unity</li><li>Custom OpenGL renderer</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Areas</h3>
+                    <ul><li>Gameplay systems</li><li>Character movement</li><li>Procedural generation</li><li>Optimisation &amp; profiling</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul><li>Git &amp; Perforce</li><li>Visual Studio / Rider</li><li>Unreal Insights</li><li>RenderDoc</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT + CONTACT
+         ============================================================ -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+        <div class="wrap about">
+            <div>
+                <header class="section__head">
+                    <p class="section__index">04</p>
+                    <h2 id="about-title">About</h2>
+                </header>
+                <p class="lede">
+                    I'm a final-year Games Programming student who likes the parts of a game players
+                    feel but never see: how a jump lands, how a gun kicks, why a frame drops.
+                </p>
+                <p>
+                    Outside coursework I take part in game jams and read engine source to figure out how things
+                    really work. I'm looking for a graduate <strong>gameplay</strong> or
+                    <strong>engine programmer</strong> role starting summer 2027.
+                </p>
+            </div>
+            <aside class="contact-card" aria-label="Contact">
+                <p class="kicker">Get in touch</p>
+                <a class="contact-card__email" href="mailto:you@example.com">you@example.com</a>
+                <ul class="socials">
+                    <li><a href="https://github.com/neilgannon">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/your-profile/">LinkedIn</a></li>
+                    <li><a href="Content/CV.pdf" download>CV (PDF)</a></li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <p>© <span data-year>2026</span> Neil Gannon. Built by hand with HTML &amp; CSS, hosted on GitHub Pages.</p>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </div>
+</footer>
 </body>
 </html>
